@@ -3,8 +3,15 @@
   display: flex;
   justify-content: space-between;
 
+  @include respond-below(md) {
+    padding: 20px 10%;
+  }
   &-list {
     display: flex;
+
+    @include respond-below(md) {
+      display: none;
+    }
 
     &-item {
       &-link {
@@ -30,7 +37,12 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
-  display:none;
+  display: none;
+
+  @include respond-below(md) {
+    display: block;
+    padding-top: 10px;
+  }
 
   &__burger {
     width: $burger-width;
