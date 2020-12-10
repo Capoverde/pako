@@ -6,70 +6,25 @@
 /* CSS Reset */
 @import "base/reset";
 
-/* CSS print */
-@import "base/print";
-
 /* Fonts */
 @import "base/fonts";
 
 /* Mixins, helpers and functions */
 @import "base/mixins";
 
+/* globals */
+@import "base/globals";
+
 /* Vendor */
 
 /* Components */
+@import "components/nav";
 
 /* Browser specific styles */
 @import "dirty/hacks";
 
 /* Demo Page styles */
-@import "demo";
 
 //###################################################
 //################# slider section   ################
 //###################################################
-
-.slider-sec {
-  width: 100%;
-  height: 60vh;
-  border: 1px solid orange;
-
-  .swiper-container {
-    width: 600px;
-    height: 300px;
-  }
-}
-
-.swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 600px;
-
-  .card--box {
-    width: 100%;
-    height: 100%;
-    background: #000;
-
-    .card--header {
-      width: 300px;
-      margin: 0;
-    }
-
-    .card--content {
-      padding: 10px;
-
-      .card--text {
-        font-size: 0.8rem;
-        padding: 10px;
-        text-align: center;
-      }
-    }
-  }
-}
