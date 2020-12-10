@@ -1,4 +1,5 @@
 .page__nav {
+  position: fixed;
   padding: 20px 20%;
   display: flex;
   justify-content: space-between;
@@ -14,10 +15,18 @@
     }
 
     &-item {
+      @include respond-below(md) {
+        margin-top: 80px;
+        text-align: center;
+      }
       &-link {
-        @include fluidSize(10px, 14px);
+        @include fluidSize(14px, 14px);
         margin-left: 16px;
         font-weight: 600;
+
+        @include respond-below(md) {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -110,4 +119,10 @@
     -ms-transform: rotate(-45deg) translate(35px, 35px);
     -o-transform: rotate(-45deg) translate(35px, 35px);
   }
+}
+
+.navOpen {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
 }
