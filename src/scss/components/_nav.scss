@@ -1,0 +1,16 @@
+.page__nav {
+  padding: 20px 20%;
+  display: flex;
+  justify-content: space-between;
+
+  &-list {
+    display: flex;
+
+    &-item {
+      &-link {
+        @include fluidSize(10px, 14px);
+        padding-left: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  @include antialiasing;
+}
+
+body {
+  background: $foreground-clr;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+.logo {
+  color: $hero-clr;
+}
+
+a {
+  &:hover {
+    @include transition(all, 0.45s);
+    color: lighten($hero-clr, 20);
+  }
+}
+
+nav,
+header,
+section {
+  width: 100%;
+}
+
+header,
+section {
+  min-height: 100vh;
+}
+
+// z-indexes:
+nav {
+  z-index: 20000;
+}
+
+.popup {
+  z-index: 30000;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px dashed blue;
+}
