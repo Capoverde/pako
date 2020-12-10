@@ -4,7 +4,7 @@ import '../scss/app.scss'
 // import Swiper styles
 // import 'swiper/swiper-bundle.css'
 /* Demo JS */
-import './demo.js'
+import './nav.js'
 
 /* Your JS Code goes here */
 // var mySwiper = new Swiper('.swiper-container', {
