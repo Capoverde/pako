@@ -12,3 +12,17 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false
   }
 })
+
+const myNav = document.querySelector('.page__nav')
+console.log(myNav)
+
+const navChange = () => {
+  window.addEventListener('scroll', e => {
+    e.preventDefault();
+    (document.body.scrollTop >= 200 ||
+      document.documentElement.scrollTop >= 100)
+      ? myNav.classList.add('nav-colored') : myNav.classList.remove('nav-colored')
+  })
+}
+
+export { navChange }

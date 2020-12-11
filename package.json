@@ -41,6 +41,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "jquery": "^3.5.1",
     "mini-css-extract-plugin": "^1.2.1",
     "postcss": "^8.1.4",
     "postcss-loader": "^4.0.4",
