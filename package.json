@@ -20,7 +20,10 @@
     }
   ],
   "dependencies": {
-    "swiper": "^6.4.1"
+    "jq-numscroll": "^1.0.2",
+    "jquery.counterup": "^2.1.0",
+    "swiper": "^6.4.1",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

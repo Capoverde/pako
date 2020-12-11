@@ -4,6 +4,7 @@ import '../scss/app.scss'
 // import Swiper styles
 // import 'swiper/swiper-bundle.css'
 /* Demo JS */
+import '../../node_modules/waypoints/src/waypoint'
 import $ from 'jquery'
 import { navChange } from './nav.js'
 
@@ -11,26 +12,11 @@ window.$ = $
 navChange()
 
 /* Your JS Code goes here */
-// var mySwiper = new Swiper('.swiper-container', {
-// Optional parameters
-// loop: true,
 
-// // If we need pagination
-// pagination: {
-//   // el: '.swiper-pagination'
-// },
+// ######### vanilla ########## //
 
-// Navigation arrows
-// navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev'
-// }
+// ---- slider:
 
-// And if we need scrollbar
-// scrollbar: {
-//   el: '.swiper-scrollbar'
-// }
-// })
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -41,6 +27,28 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true
   }
+})
+
+// ---- counter-up:
+
+const counters = document.querySelectorAll('.counter')
+const speed = 2000
+
+counters.forEach(counter => {
+  const updCount = () => {
+    const target = counter.getAttribute('data-target')
+    const count = +counter.innerText
+
+    const score = target / speed
+
+    if (count < target) {
+      counter.innerText = count + score
+      setTimeout(updCount, 1)
+    } else {
+      counter.innerText = target
+    }
+  }
+  updCount()
 })
 
 // ######### jQuery ########## //
@@ -72,14 +80,14 @@ $(function () {
 
   // counters:
 
-  let start = 0;
-  let end = $('.num').html();
-  let speed = 50;
+  // let start = 0
+  // let end = [$('.num1'), $('.num2'), $('.num3')].html()
+  // let speed = 50
 
-  setInterval(function () {
-    if (start < end) {
-      start++
-    }
-    $('.num').html(start);
-  }, speed);
+  // setInterval(function () {
+  //   if (start < end) {
+  //     start++
+  //   }
+  //   $('.num1').html(start)
+  // }, speed)
 })

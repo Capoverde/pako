@@ -1,3 +1,4 @@
+
 const menuBtn = document.querySelector('.menu-btn')
 const navList = document.querySelector('.page__nav-list')
 let menuOpen = false
@@ -14,7 +15,6 @@ menuBtn.addEventListener('click', () => {
 })
 
 const myNav = document.querySelector('.page__nav')
-console.log(myNav)
 
 const navChange = () => {
   window.addEventListener('scroll', e => {
