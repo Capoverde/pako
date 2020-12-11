@@ -64,7 +64,8 @@ a {
 
 nav,
 header,
-section {
+section,
+footer {
   width: 100%;
 }
 
@@ -77,6 +78,12 @@ section {
 nav,
 #totop {
   z-index: 20000;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
 }
 
 .popup {
