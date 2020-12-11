@@ -1,0 +1,45 @@
+.fleet-sec {
+  h2 {
+    padding-bottom: 40px;
+  }
+
+  p {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .swiper-slide {
+    img {
+      height: 300px;
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h3 {
+    margin-top: 100px;
+  }
+
+  p.text {
+    padding: 30px 0;
+  }
+
+  .opinion-content {
+    p {
+      padding: 10px;
+      @include fluidSize(8px, 12px);
+    }
+
+    span {
+      display: inline-block;
+      @include fluidSize(6px, 10px);
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+}
