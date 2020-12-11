@@ -32,10 +32,27 @@ h2 {
   font-weight: 900;
 }
 
+h3,
+h4 {
+  font-weight: 600;
+}
+
 h2,
 h3,
 h4 {
   text-align: center;
+}
+
+h2 {
+  @include fluidSize(20px, 32px);
+}
+
+h3 {
+  @include fluidSize(12px, 22px);
+}
+
+p.text {
+  @include fluidSize(10px, 16px);
 }
 
 a {
@@ -70,7 +87,7 @@ nav,
   width: 60%;
   height: 100%;
   margin: 0 auto;
-  border: 1px dashed blue;
+  // border: 1px dashed blue;
 }
 
 .logo {
@@ -78,9 +95,13 @@ nav,
 }
 
 .btn {
-  padding: 5px 10px;
   border: 1px solid $hero-clr;
   @include border-radius(28px);
+  padding: 16px 62px;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: linear-gradient(to left, #4869b7 0%, #03309b 100%);
+  color: $white;
 
   &:hover {
     @include transition(all, 0.45s);
@@ -109,4 +130,38 @@ nav,
 
 .showTop {
   right: 5%;
+}
+
+//##########################################
+//################# slider   ################
+//##########################################
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  img {
+    width: 200px;
+    @include border-radius(10px);
+  }
+}
+
+.swiper-pagination {
+  bottom: 0;
 }

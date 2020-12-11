@@ -19,7 +19,19 @@ navChange()
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
+  arrows: true,
+  loop: true,
+  autoplay: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+})
+
+var swiper = new Swiper('.swiper-opinion-container', {
+  slidesPerView: 2,
+  spaceBetween: 20,
   arrows: true,
   loop: true,
   autoplay: true,
@@ -32,7 +44,7 @@ var swiper = new Swiper('.swiper-container', {
 // ---- counter-up:
 
 const counters = document.querySelectorAll('.counter')
-const speed = 2000
+const speed = 6000
 
 counters.forEach(counter => {
   const updCount = () => {
@@ -42,8 +54,8 @@ counters.forEach(counter => {
     const score = target / speed
 
     if (count < target) {
-      counter.innerText = count + score
-      setTimeout(updCount, 1)
+      counter.innerText = count + Math.ceil(score)
+      setTimeout(updCount, 2)
     } else {
       counter.innerText = target
     }

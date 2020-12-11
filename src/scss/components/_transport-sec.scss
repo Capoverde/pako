@@ -1,0 +1,88 @@
+.transport-sec {
+  padding: 10% 0;
+
+  .transport-container {
+    .logistic__box {
+      display: flex;
+      gap: 20px;
+
+      &-left,
+      &-right {
+        width: 40%;
+      }
+
+      &-left {
+        h4 {
+          padding-top: 20px;
+        }
+
+        p {
+          @include fluidSize(10px, 14px);
+          padding: 20px 0;
+          text-align: center;
+        }
+
+        .transport__list {
+          columns: 2;
+          &-item {
+            display: flex;
+            align-items: center;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+            span {
+              padding: 20px 0 0 10px;
+              @include fluidSize(6px, 8px);
+            }
+          }
+        }
+
+        .magazine {
+          display: flex;
+
+          img {
+            height: 229px;
+            width: 167px;
+          }
+        }
+      }
+
+      &-right {
+        width: 60%;
+        height: 100%;
+      }
+    }
+  }
+
+  h2 {
+    padding: 50px 0 20px 0;
+  }
+
+  p.text {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .profess-box-container {
+    display: flex;
+    justify-content: space-between;
+
+    .profess-box {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      padding-top: 100px;
+
+      img {
+        width: 40px;
+      }
+      span {
+        padding: 20px;
+        display: inline-block;
+        text-align: center;
+        @include fluidSize(8px, 10px);
+      }
+    }
+  }
+}
