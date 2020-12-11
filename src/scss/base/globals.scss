@@ -156,6 +156,8 @@ nav,
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  cursor: grab;
+
   img {
     width: 200px;
     @include border-radius(10px);
