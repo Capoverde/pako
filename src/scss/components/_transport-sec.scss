@@ -1,10 +1,14 @@
 .transport-sec {
-  padding: 10% 0;
+  padding: 50px 0;
 
   .transport-container {
     .logistic__box {
       display: flex;
       gap: 20px;
+
+      @include respond-below(md) {
+        flex-flow: column wrap;
+      }
 
       &-left,
       &-right {
@@ -12,6 +16,9 @@
       }
 
       &-left {
+        @include respond-below(md) {
+          width: 100%;
+        }
         h4 {
           padding-top: 20px;
         }
@@ -67,6 +74,10 @@
   .profess-box-container {
     display: flex;
     justify-content: space-between;
+
+    @include respond-below(md) {
+      flex-flow: column wrap;
+    }
 
     .profess-box {
       display: flex;
