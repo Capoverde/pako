@@ -2,12 +2,24 @@
   height: auto;
   padding: 100px 0;
 
+  @include respond-below(md) {
+    padding: 50px 0;
+  }
+
   .contact__content {
+    @include respond-below(md) {
+      display: flex;
+      flex-flow: column wrap;
+    }
     &-box {
       width: 400px;
       height: 200px;
       background: lightgrey;
       @include border-radius(10px);
+
+      @include respond-below(md) {
+        width: 220px;
+      }
     }
   }
 
@@ -31,8 +43,18 @@
     margin-left: 5%;
     font-weight: 700;
   }
+
+  .mail {
+    @include respond-below(md) {
+      margin-left: 2%;
+      font-size: 12px;
+    }
+  }
   .contact__list {
     display: flex;
+    @include respond-below(md) {
+      flex-flow: column;
+    }
 
     &-item {
       padding: 20px 0;

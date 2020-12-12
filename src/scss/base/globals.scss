@@ -119,7 +119,7 @@ ul {
 #totop {
   position: fixed;
   bottom: 2%;
-  right: -5%;
+  right: -50%;
   width: 40px;
   height: 40px;
   background: $hero-clr;
@@ -173,4 +173,8 @@ ul {
 
 .swiper-pagination {
   bottom: 0;
+
+  @include respond-below(md) {
+    display: none;
+  }
 }

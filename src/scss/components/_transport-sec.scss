@@ -10,6 +10,11 @@
         flex-flow: column wrap;
       }
 
+      .row {
+        @include respond-below(md) {
+          margin-top: 100px;
+        }
+      }
       &-left,
       &-right {
         width: 40%;
@@ -47,7 +52,10 @@
 
         .magazine {
           display: flex;
-
+          @include respond-below(md) {
+            display: flex;
+            flex-flow: column;
+          }
           img {
             height: 229px;
             width: 167px;
@@ -64,6 +72,10 @@
 
   h2 {
     padding: 50px 0 20px 0;
+
+    @include respond-below(md) {
+      padding: 50px 0 20px 0;
+    }
   }
 
   p.text {
@@ -84,6 +96,10 @@
       flex-flow: column wrap;
       align-items: center;
       padding-top: 100px;
+
+      @include respond-below(md) {
+        padding-top: 0px;
+      }
 
       img {
         width: 40px;

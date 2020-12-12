@@ -34,10 +34,29 @@ var swiper = new Swiper('.swiper-opinion-container', {
   spaceBetween: 20,
   arrows: true,
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50
+    }
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection())
+    }
   }
 })
 
@@ -92,40 +111,23 @@ $(function () {
 
   // counters:
 
-  // let start = 0
-  // let end = [$('.num1'), $('.num2'), $('.num3')].html()
-  // let speed = 50
-
-  // setInterval(function () {
-  //   if (start < end) {
-  //     start++
-  //   }
-  //   $('.num1').html(start)
-  // }, speed)
-
-
   // smooth scroll to section:
 
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $('a').on('click', function (event) {
+    $('.page__nav-list').removeClass('navOpen')
+    $('.menu-btn').removeClass('open')
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    if (this.hash !== '') {
+      event.preventDefault()
 
-      // Store hash
-      var hash = this.hash;
+      var hash = this.hash
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
+      }, 800, function () {
+        window.location.hash = hash
+      })
     } // End if
-  });
+  })
 })

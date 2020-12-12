@@ -1,6 +1,10 @@
 .about-sec {
   padding-top: 200px;
 
+  @include respond-below(md) {
+    padding-top: 330px;
+  }
+
   p.text {
     padding: 30px 0;
     text-align: center;
@@ -11,6 +15,10 @@
   .counter__box-container {
     padding: 0 10%;
     display: flex;
+
+    @include respond-below(md) {
+      flex-flow: column wrap;
+    }
 
     .counter__box {
       display: flex;
@@ -26,6 +34,12 @@
         color: $hero-clr;
       }
     }
+  }
+}
+
+h3 {
+  @include respond-below(md) {
+    margin-top: 40px;
   }
 }
 
