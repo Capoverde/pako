@@ -6,7 +6,7 @@ import '../scss/app.scss'
 /* Demo JS */
 import '../../node_modules/waypoints/src/waypoint'
 import $ from 'jquery'
-// import { navChange } from './nav.js'
+import { navChange } from './nav.js'
 
 window.$ = $
 navChange()

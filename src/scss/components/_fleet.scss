@@ -45,6 +45,7 @@
     padding: 20px;
     background: lightgrey;
     @include border-radius(10px);
+    width: 600px;
 
     .opinion-content {
       p {
