@@ -98,6 +98,7 @@
         position: absolute;
         top: 20px;
         left: -28px;
+        height: 250px;
 
         @include respond-below(md) {
           display: none;
