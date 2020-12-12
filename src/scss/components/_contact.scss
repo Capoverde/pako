@@ -1,0 +1,46 @@
+.contact-sec {
+  height: auto;
+  padding: 100px 0;
+
+  .contact__content {
+    &-box {
+      width: 400px;
+      height: 200px;
+      background: lightgrey;
+      @include border-radius(10px);
+    }
+  }
+
+  h2 {
+    margin: 5%;
+  }
+
+  h2,
+  h4 {
+    text-align: left;
+  }
+
+  h4 {
+    padding: 20px 0;
+  }
+
+  h2,
+  h4,
+  .contact__list,
+  .mail {
+    margin-left: 5%;
+    font-weight: 700;
+  }
+  .contact__list {
+    display: flex;
+
+    &-item {
+      padding: 20px 0;
+      margin-left: 10px;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
