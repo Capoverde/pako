@@ -96,7 +96,7 @@
 
       img {
         position: absolute;
-        top: -9px;
+        top: 20px;
         left: -28px;
 
         @include respond-below(md) {
