@@ -20,13 +20,14 @@
         justify-content: space-between;
         margin-top: 40px;
         flex-basis: 50%;
-        border: 2px solid lighten($hero-clr, 30);
+        // border: 2px solid lighten($hero-clr, 30);
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        padding: 30px 20px;
+        padding: 30px 20px 50px 20px;
+        background: #f3f3f3e3;
 
         p {
           @include fluidSize(10px, 16px);
@@ -40,7 +41,7 @@
           gap: 30px;
 
           &-item {
-            color: lighten($hero-clr, 30);
+            color: $hero-clr;
             font-weight: 700;
           }
         }
@@ -51,7 +52,7 @@
           padding-top: 20px;
           .fa-envelope,
           a {
-            color: lighten($hero-clr, 30);
+            color: $hero-clr;
           }
           a {
             font-weight: 700;
