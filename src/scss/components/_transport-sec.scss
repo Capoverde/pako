@@ -86,6 +86,10 @@
   .profess-box-container {
     display: flex;
     justify-content: space-between;
+    background-image: url("/src/images/content/pako-blekit.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
 
     @include respond-below(md) {
       flex-flow: column wrap;

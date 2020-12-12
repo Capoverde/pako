@@ -19,8 +19,15 @@ navChange()
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 30,
   arrows: true,
+  loop: true,
+  autoplay: true
+})
+
+var swiper = new Swiper('.swiper-opinion-contianer', {
+  slidesPerView: 2,
+  spaceBetween: 30,
   loop: true,
   autoplay: true
 })

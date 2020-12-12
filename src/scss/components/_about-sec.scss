@@ -1,5 +1,10 @@
 .about-sec {
   padding-top: 200px;
+  background-image: url("/src/images/content/swiat.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-attachment: fixed;
 
   @include respond-below(md) {
     padding-top: 330px;
