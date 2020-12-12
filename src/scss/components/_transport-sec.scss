@@ -88,8 +88,8 @@
     justify-content: space-between;
     background-image: url("/src/images/content/pako-blekit.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+    background-position: 35px 0;
+    background-size: 90%;
 
     @include respond-below(md) {
       flex-flow: column wrap;
@@ -99,7 +99,7 @@
       display: flex;
       flex-flow: column wrap;
       align-items: center;
-      padding-top: 100px;
+      padding: 60px 0;
 
       @include respond-below(md) {
         padding-top: 0px;
