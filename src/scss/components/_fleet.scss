@@ -33,6 +33,13 @@
     padding: 30px 0;
   }
 
+  .swiper-wrapper {
+    @include respond-below(md) {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
   .opinion-slide {
     position: relative;
     padding: 20px;

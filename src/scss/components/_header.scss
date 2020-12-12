@@ -1,6 +1,9 @@
 .page__header {
-  height: 100vh;
+  height: 110vh;
   padding: 154px 10% 0 20%;
+  background-image: url("/src/images/content/AdobeStock_360433829_Preview.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @include respond-below(md) {
     padding: 100px 0;
@@ -54,12 +57,12 @@
 
       .btn {
         position: absolute;
-        bottom: 0;
+        top: 110%;
         left: 10%;
         transform: translate(-50%, -50%);
         color: $white;
         @include fluidSize(12px, 14px);
-        padding: 5px 62px;
+        padding: 16px 62px;
         font-weight: 600;
         cursor: pointer;
         background-image: linear-gradient(to left, #4869b7 0%, #03309b 100%);
