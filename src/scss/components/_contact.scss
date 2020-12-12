@@ -7,6 +7,17 @@
   }
 
   .contact__content {
+    display: flex;
+    gap: 20px;
+
+    .contact__map {
+      background-image: url("/src/images/content/polska-kontakt.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      width: 400px;
+      height: 400px;
+    }
     @include respond-below(md) {
       display: flex;
       flex-flow: column wrap;
