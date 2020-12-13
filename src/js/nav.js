@@ -1,6 +1,7 @@
 
 const menuBtn = document.querySelector('.menu-btn')
 const navList = document.querySelector('.page__nav-list')
+const logo = document.querySelector('page__nav-logo');
 let menuOpen = false
 menuBtn.addEventListener('click', () => {
   if (!menuOpen) {
@@ -21,7 +22,8 @@ const navChange = () => {
     e.preventDefault();
     (document.body.scrollTop >= 200 ||
       document.documentElement.scrollTop >= 100)
-      ? myNav.classList.add('nav-colored') : myNav.classList.remove('nav-colored')
+      ? myNav.style.padding = '10px 20%' : myNav.style.padding = '20px 20%'
+    // logo.classList.add('changeLogo') : logo.classList.add('changeLogo');
   })
 }
 

@@ -34,15 +34,6 @@ var swiper1 = new Swiper('.swiper-opinion-contianer', {
   autoplay: true
 })
 
-// ---slick slider
-
-$('.sl-slider').slick({
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  arrows: true,
-  infinite: true
-})
-
 // ---- counter-up:
 
 const counters = document.querySelectorAll('.counter')

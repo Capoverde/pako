@@ -61,7 +61,6 @@ p.text {
 a {
   &:hover {
     @include transition(all, 0.45s);
-    color: lighten($hero-clr, 20);
   }
 }
 
