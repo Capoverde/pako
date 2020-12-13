@@ -6,6 +6,8 @@ import '../scss/app.scss'
 /* Demo JS */
 import '../../node_modules/waypoints/src/waypoint'
 import $ from 'jquery'
+// import 'aos'
+// import '../../node_modules/aos/dist/aos.js'
 import { navChange } from './nav.js'
 
 window.$ = $
@@ -15,7 +17,7 @@ navChange()
 
 // ######### vanilla ########## //
 
-// ---- slider:
+// ---- swiper slider:
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
@@ -25,11 +27,20 @@ var swiper = new Swiper('.swiper-container', {
   autoplay: true
 })
 
-var swiper = new Swiper('.swiper-opinion-contianer', {
+var swiper1 = new Swiper('.swiper-opinion-contianer', {
   slidesPerView: 2,
   spaceBetween: 30,
   loop: true,
   autoplay: true
+})
+
+// ---slick slider
+
+$('.sl-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  arrows: true,
+  infinite: true
 })
 
 // ---- counter-up:
@@ -96,7 +107,7 @@ $(function () {
       var hash = this.hash
 
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - $('.page__nav').height()
       }, 800, function () {
         window.location.hash = hash
       })

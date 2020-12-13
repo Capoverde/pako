@@ -1,5 +1,5 @@
 .page__header {
-  height: 120vh;
+  height: 100vh;
   padding: 154px 10% 0 20%;
   background-image: url("/src/images/content/AdobeStock_360433829_Preview.png");
   background-size: cover;
@@ -126,7 +126,7 @@
           }
           span {
             display: block;
-            adding: 8px 120px 0 20px;
+            padding: 8px 120px 0 20px;
             @include fluidSize(10px, 12px);
           }
         }

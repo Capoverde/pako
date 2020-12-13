@@ -8,8 +8,15 @@
     text-align: center;
   }
 
+  .fleet-slider {
+    .swiper-container {
+      height: 300px;
+    }
+  }
+
   .swiper-slide {
     background-color: silver;
+    @include border-radius(10px);
     img {
       height: 300px;
     }
