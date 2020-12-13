@@ -65,8 +65,10 @@
             flex-flow: column;
           }
           img {
-            height: 229px;
-            width: 167px;
+            position: absolute;
+            height: 246px;
+            width: 388px;
+            left: 240px;
           }
         }
       }
