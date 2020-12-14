@@ -96,15 +96,15 @@
     display: flex;
 
     &-img-box {
-      border-radius: 16px;
+      @include border-radius(16px);
       background: #c0c0c0;
       width: 400px;
       height: 200px;
       margin: 116px 0;
+      overflow: hidden;
 
       img {
         width: 100%;
-        object-fit: cover;
 
         @include respond-below(md) {
           display: none;
