@@ -24,7 +24,14 @@ var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
   arrows: true,
   loop: true,
-  autoplay: true
+  autoplay: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+
 })
 
 var swiper1 = new Swiper('.swiper-opinion-contianer', {
