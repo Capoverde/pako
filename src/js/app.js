@@ -94,8 +94,6 @@ $(function () {
 
   // smooth scroll to section:
 
-  // Add smooth scrolling to all links
-
   $('a').on('click', function (event) {
     $('.page__nav-list').removeClass('navOpen')
     $('.menu-btn').removeClass('open')
@@ -106,10 +104,12 @@ $(function () {
       var hash = this.hash
 
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - $('.page__nav').height()
+        scrollTop: $(hash).offset().top
       }, 800, function () {
         window.location.hash = hash
       })
     } // End if
   })
+
+  console.log($('page__nav').height())
 })

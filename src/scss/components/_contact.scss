@@ -20,15 +20,12 @@
         justify-content: space-between;
         margin-top: 40px;
         flex-basis: 50%;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+        @include border-radius(16px);
         padding: 30px 20px 50px 20px;
-        background: #f3f3f3e3;
+        background: $placeholder-bg;
 
         p {
+          padding-top: 20px;
           @include fluidSize(10px, 16px);
           font-weight: 400;
         }

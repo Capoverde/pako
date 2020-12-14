@@ -49,6 +49,7 @@
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
+
         &-item {
           @include respond-below(md) {
             padding-top: 20px;
