@@ -41,22 +41,43 @@
 
   .opinion-slide {
     position: relative;
-    // padding: 20px;
     background: lightgrey;
     @include border-radius(10px);
     width: 600px;
-    height: 200px;
+    height: 150px;
 
     .opinion-content {
       p {
         padding: 10px;
         @include fluidSize(8px, 12px);
+        position: relative;
+
+        &::before,
+        &::after {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          color: #e9e9e9c0;
+          @include fluidSize(100px, 200px);
+          opacity: 0.5;
+        }
+
+        &::before {
+          top: -90%;
+          content: open-quote;
+          left: 8%;
+        }
+
+        &::after {
+          top: 157%;
+          content: close-quote;
+          right: -9%;
+        }
       }
 
       span {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 20px;
+        right: 10px;
         transform: translate(-50%, -50%);
         display: inline-block;
         @include fluidSize(6px, 10px);

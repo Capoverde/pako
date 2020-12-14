@@ -1,9 +1,9 @@
 .page__footer {
   padding: 20px;
   .footer-container {
-    width: 80%;
+    width: 60%;
     display: flex;
-    gap: 10px;
+    gap: 10%;
     padding-bottom: 30px;
     @include respond-below(md) {
       flex-flow: column wrap;
@@ -12,7 +12,7 @@
     .footer-box-left {
       width: 50%;
       padding: 40px 0;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid $white;
       position: relative;
       @include respond-below(md) {
         width: 100%;
@@ -20,8 +20,13 @@
       .logo {
         position: absolute;
         top: 75%;
-        left: 8%;
+        left: 10%;
         transform: translate(-50%, -50%);
+        svg {
+          path {
+            fill: $white;
+          }
+        }
 
         @include respond-below(md) {
           left: 15%;
@@ -29,6 +34,7 @@
       }
     }
     .footer-box-right {
+      padding-top: 23px;
       width: 50%;
       display: flex;
       flex-flow: column wrap;
@@ -41,6 +47,7 @@
       .footer-list-bottom {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         width: 100%;
         &-item {
           @include respond-below(md) {
@@ -48,6 +55,7 @@
           }
           &-link {
             color: $text-clr;
+            @include fluidSize(12px, 14px);
           }
         }
         @include respond-below(md) {

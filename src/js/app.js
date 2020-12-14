@@ -95,6 +95,7 @@ $(function () {
   // smooth scroll to section:
 
   // Add smooth scrolling to all links
+
   $('a').on('click', function (event) {
     $('.page__nav-list').removeClass('navOpen')
     $('.menu-btn').removeClass('open')
