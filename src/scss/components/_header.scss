@@ -60,10 +60,10 @@
       .btn {
         position: absolute;
         top: 110%;
-        left: 10%;
+        left: 12%;
         transform: translate(-50%, -50%);
         color: $white;
-        @include fluidSize(12px, 14px);
+        @include fluidSize(16px, 18px);
         padding: 16px 62px;
         font-weight: 600;
         cursor: pointer;
@@ -89,16 +89,14 @@
     display: flex;
 
     &-img-box {
-      margin-top: 50px;
-      position: relative;
-      width: 600px;
-      height: 300px;
+      border-radius: 16px;
+      background: #c0c0c0;
+      width: 400px;
+      height: 200px;
+      margin: 116px 0;
 
       img {
-        position: absolute;
-        top: 20px;
-        left: -28px;
-        height: 250px;
+        width: 100%;
 
         @include respond-below(md) {
           display: none;
@@ -107,6 +105,7 @@
     }
 
     &-content {
+      margin-left: 30px;
       @include respond-below(md) {
         width: 2700px;
       }
@@ -121,6 +120,8 @@
           display: flex;
           gap: 10px;
           margin-top: 20px;
+          padding-left: 10px;
+
           img {
             width: 50px;
           }
