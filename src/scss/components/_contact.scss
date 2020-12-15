@@ -14,9 +14,13 @@
       height: 100%;
       gap: 10%;
 
+      @include respond-below(md) {
+        flex-flow: column;
+      }
+
       .contact__content-box {
         display: flex;
-        flex-flow: column;
+        flex-flow: column wrap;
         justify-content: space-between;
         margin-top: 40px;
         flex-basis: 50%;
@@ -24,10 +28,19 @@
         padding: 30px 20px 50px 20px;
         background: $placeholder-bg;
 
+        @include respond-below(md) {
+          justify-content: center;
+          order: 2;
+        }
+
         p {
           padding-top: 20px;
-          @include fluidSize(10px, 16px);
           font-weight: 400;
+          @include fluidSize(14px, 16px);
+
+          @include respond-below(md) {
+            text-align: center;
+          }
         }
 
         .contact-us-list,
@@ -35,6 +48,12 @@
           padding: 20px 0;
           display: flex;
           gap: 30px;
+
+          @include respond-below(md) {
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+          }
 
           &-item {
             color: $hero-clr;
@@ -49,8 +68,6 @@
           .fa-envelope,
           a {
             color: $hero-clr;
-          }
-          a {
             font-weight: 700;
           }
         }
@@ -62,6 +79,11 @@
 
         img {
           max-width: 125%;
+
+          @include respond-below(md) {
+            max-width: 100%;
+            padding-top: 30px;
+          }
         }
       }
     }

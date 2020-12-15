@@ -23,7 +23,7 @@
   }
 
   .counter__box-container {
-    padding: 0 10%;
+    padding: 0;
     display: flex;
 
     @include respond-below(md) {
@@ -33,15 +33,20 @@
     .counter__box {
       display: flex;
       flex-flow: column wrap;
-      h4 {
-        font-weight: 600;
-      }
 
       .counter {
         text-align: center;
         font-weight: 600;
         @include fluidSize(48px, 56px);
         color: $hero-clr;
+      }
+
+      h4 {
+        font-weight: 600;
+      }
+
+      p {
+        padding: 30px 10px;
       }
     }
   }

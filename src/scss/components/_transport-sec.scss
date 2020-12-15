@@ -36,6 +36,14 @@
 
         .transport__list {
           columns: 2;
+
+          @include respond-below(md) {
+            columns: 1;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 0 10%;
+          }
+
           &-item {
             display: flex;
             align-items: center;
@@ -53,7 +61,7 @@
             }
             span {
               padding: 0 10px;
-              @include fluidSize(6px, 8px);
+              @include fluidSize(14px, 10px);
             }
           }
         }

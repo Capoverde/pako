@@ -1,5 +1,5 @@
 .page__footer {
-  padding: 20px;
+  padding: 2px;
   .footer-container {
     width: 60%;
     display: flex;
@@ -34,7 +34,7 @@
       }
     }
     .footer-box-right {
-      padding-top: 23px;
+      padding-top: 38px;
       width: 50%;
       display: flex;
       flex-flow: column wrap;
@@ -69,7 +69,7 @@
         font-weight: 600;
       }
       .footer-list-bottom {
-        margin-top: 20px;
+        margin-top: 5px;
 
         @include respond-below(md) {
           margin-bottom: 20px;
