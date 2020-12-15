@@ -38,7 +38,17 @@ var swiper1 = new Swiper('.swiper-opinion-contianer', {
   slidesPerView: 2,
   spaceBetween: 30,
   loop: true,
-  autoplay: true
+  autoplay: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    }
+  }
 })
 
 // ---- counter-up:

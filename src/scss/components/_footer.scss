@@ -1,10 +1,13 @@
 .page__footer {
   padding: 2px;
+  background: $footer-bg;
+
   .footer-container {
     width: 60%;
     display: flex;
     gap: 10%;
     padding-bottom: 30px;
+
     @include respond-below(md) {
       flex-flow: column wrap;
     }
@@ -14,25 +17,29 @@
       padding: 40px 0;
       border-bottom: 1px solid $white;
       position: relative;
+
       @include respond-below(md) {
         width: 100%;
       }
+
       .logo {
         position: absolute;
         top: 75%;
         left: 10%;
         transform: translate(-50%, -50%);
+
+        @include respond-below(md) {
+          left: 50%;
+        }
+
         svg {
           path {
             fill: $white;
           }
         }
-
-        @include respond-below(md) {
-          left: 15%;
-        }
       }
     }
+
     .footer-box-right {
       padding-top: 38px;
       width: 50%;
@@ -42,7 +49,9 @@
 
       @include respond-below(md) {
         width: 100%;
+        padding-top: 0;
       }
+
       .footer-list-top,
       .footer-list-bottom {
         display: flex;
@@ -67,15 +76,52 @@
 
       .footer-list-top {
         font-weight: 600;
+
+        &-item {
+          @include respond-below(md) {
+            &:nth-child(1) {
+              order: 4;
+            }
+            &:nth-child(2) {
+              order: 2;
+            }
+            &:nth-child(3) {
+              order: 1;
+            }
+            &:nth-child(4) {
+              order: 5;
+            }
+            &:nth-child(5) {
+              order: 3;
+            }
+          }
+        }
       }
+
       .footer-list-bottom {
         margin-top: 5px;
 
         @include respond-below(md) {
           margin-bottom: 20px;
         }
+
+        &-item {
+          @include respond-below(md) {
+            &:nth-child(1) {
+              order: 2;
+            }
+            &:nth-child(2) {
+              order: 1;
+            }
+            &:nth-child(3) {
+              order: 3;
+            }
+            &:nth-child(4) {
+              order: 4;
+            }
+          }
+        }
       }
     }
   }
-  background: $footer-bg;
 }
