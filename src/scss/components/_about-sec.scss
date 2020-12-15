@@ -76,3 +76,17 @@ h3 {
     margin-top: 20px;
   }
 }
+
+#download {
+  display: flex;
+
+  img {
+    margin-left: 10px;
+    svg {
+      color: $hero-clr;
+      path {
+        fill: $hero-clr;
+      }
+    }
+  }
+}
