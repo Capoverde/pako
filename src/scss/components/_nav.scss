@@ -7,14 +7,19 @@
   @include transition(padding, 0.4s);
 
   @include respond-below(md) {
-    padding: 20px 10%;
+    padding: 20px 5%;
   }
   &-list {
     display: flex;
     align-items: center;
 
     @include respond-below(md) {
+      position: absolute;
+      background: $foreground-clr;
+      width: 100%;
+      left: 0;
       display: none;
+      flex-flow: column wrap;
     }
 
     &-item {
