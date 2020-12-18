@@ -9,6 +9,12 @@
   @include respond-below(md) {
     padding: 20px 5%;
   }
+
+  .logo {
+    position: absolute;
+    z-index: 20000;
+  }
+
   &-list {
     display: flex;
     align-items: center;

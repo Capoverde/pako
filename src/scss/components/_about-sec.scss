@@ -80,6 +80,11 @@ h3 {
 #download {
   display: flex;
 
+  @include respond-below(md) {
+    display: -webkit-box;
+    display: -webkit-inline-box;
+  }
+
   img {
     margin-left: 10px;
     svg {

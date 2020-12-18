@@ -87,10 +87,10 @@
     }
 
     @include respond-below(md) {
+      width: 330px;
       position: absolute;
-      top: 11%;
-      left: 20%;
-      padding: 16px 120px;
+      top: 7%;
+      left: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -115,7 +115,7 @@
       @include respond-below(md) {
         width: 330px;
         height: 200px;
-        margin: 61px 25px;
+        margin: 375px 25px;
       }
 
       img {

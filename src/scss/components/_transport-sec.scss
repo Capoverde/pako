@@ -15,15 +15,16 @@
           margin-top: 100px;
         }
       }
+
       &-left,
       &-right {
         width: 40%;
+        @include respond-below(md) {
+          width: 100% !important;
+        }
       }
 
       &-left {
-        @include respond-below(md) {
-          width: 100%;
-        }
         h4 {
           padding-top: 20px;
         }
@@ -77,6 +78,10 @@
             height: 292px;
             width: 388px;
             left: 252px;
+
+            @include respond-below(md) {
+              display: none;
+            }
           }
         }
       }
@@ -111,6 +116,7 @@
 
     @include respond-below(md) {
       flex-flow: column wrap;
+      background-image: none;
     }
 
     .profess-box {
