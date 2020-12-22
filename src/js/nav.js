@@ -37,7 +37,11 @@ const logoChange = () => {
     e.preventDefault();
     (document.body.scrollTop >= 200 ||
       document.documentElement.scrollTop >= 100)
-      ? logo.style.height = '25px' : logo.style.height = '40px'
+      // ? logo.style.height = '25px' : logo.style.height = '40px'
+      ? logo.setAttribute("style", "height:25px; transition: height .45s") : logo.setAttribute("style", "height:40px; transition: height .45s")
+    if (window.screen.width <= 992 && window.screen.height <= 768) {
+      logo.setAttribute("style", "height:40px;")
+    }
   })
 }
 export { navChange, logoChange }
