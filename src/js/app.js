@@ -12,6 +12,7 @@ import { navChange, logoChange } from './nav.js'
 
 window.$ = $
 navChange()
+logoChange()
 
 /* Your JS Code goes here */
 
