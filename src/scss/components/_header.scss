@@ -82,9 +82,8 @@
     background-image: linear-gradient(to left, #4869b7 0%, #03309b 100%);
     @include transition(box-shadow, 0.45s);
 
-
     @media (max-width: 1367px) {
-      top:400px;
+      top: 400px;
     }
 
     &:hover {

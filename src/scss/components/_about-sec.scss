@@ -1,5 +1,5 @@
 .about-sec {
-  padding-top: 130px;
+  padding-top: 80px;
   background-image: url("/src/images/content/mapaswiatapng.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -59,6 +59,7 @@ h3 {
 }
 
 .btn-container {
+  position: relative;
   padding: 0;
   display: flex;
   flex-flow: column wrap;
@@ -78,7 +79,9 @@ h3 {
 }
 
 #download {
-  display: flex;
+  position: relative;
+  font-weight: 600;
+  left: -14px;
 
   @include respond-below(md) {
     display: -webkit-box;
@@ -86,9 +89,15 @@ h3 {
   }
 
   img {
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translate(-50%, -50%);
+    width: 18px;
+
     svg {
       color: $hero-clr;
+
       path {
         fill: $hero-clr;
       }
