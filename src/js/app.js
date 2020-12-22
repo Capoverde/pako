@@ -47,7 +47,7 @@ var swiper1 = new Swiper('.swiper-opinion-contianer', {
       spaceBetween: 20
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 40
     }
   }
@@ -116,12 +116,12 @@ $(function () {
       var hash = this.hash
 
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - $('.page__nav').height()
       }, 800, function () {
         window.location.hash = hash
       })
     } // End if
   })
 
-  console.log($('page__nav').height())
+  console.log($('.page__nav').height())
 })
