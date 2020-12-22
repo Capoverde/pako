@@ -8,11 +8,12 @@ import '../../node_modules/waypoints/src/waypoint'
 import $ from 'jquery'
 // import 'aos'
 // import '../../node_modules/aos/dist/aos.js'
-import { navChange, logoChange } from './nav.js'
+import { navChange, logoChange, contactBtnChange } from './nav.js'
 
 window.$ = $
 navChange()
 logoChange()
+contactBtnChange()
 
 /* Your JS Code goes here */
 
