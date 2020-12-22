@@ -6,8 +6,12 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+  @include respond-above(lg) {
+    height: 120vh;
+  }
+
   @include respond-below(md) {
-    padding: 100px 0;
+    padding: 130px 0;
   }
 
   .container {
@@ -69,8 +73,8 @@
   // download button
   .download {
     position: absolute;
-    top: 110%;
-    left: 12%;
+    top: 10%;
+    left: 29%;
     transform: translate(-50%, -50%);
     color: $white;
     @include fluidSize(16px, 18px);

@@ -11,6 +11,7 @@
   }
 
   .logo {
+    top: 10px;
     position: absolute;
     z-index: 20000;
   }
@@ -163,4 +164,7 @@
 }
 
 .changeLogo {
+  svg {
+    height: 30px;
+  }
 }
