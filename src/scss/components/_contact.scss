@@ -5,7 +5,7 @@
   .container {
     h2 {
       text-align: left;
-      margin-left: 130px;
+      margin-left: 100px;
     }
 
     .contact-wrapper {
@@ -65,6 +65,11 @@
         }
         .email-box {
           padding-top: 20px;
+
+          @include respond-below(md) {
+            text-align: center;
+          }
+
           .fa-envelope,
           a {
             color: $hero-clr;
