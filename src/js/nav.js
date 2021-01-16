@@ -57,4 +57,30 @@ const contactBtnChange = () => {
     // }
   })
 }
-export { navChange, logoChange, contactBtnChange }
+
+// amoth scrool:
+
+const links = document.querySelectorAll('.page__nav-list-item-link')
+
+
+
+const clickHandler = e => {
+  console.log('klik')
+  document.querySelector('.page__nav-list').classList.remove('navOpen')
+  document.querySelector('.menu-btn').classList.remove('open')
+
+  e.preventDefault()
+  const href = this.getAttribute('href')
+  const offsetTop = document.querySelector(href).offsetTop - document.querySelector('.page__nav').clientHeight
+
+  scroll({
+    top: offsetTop,
+    behavior: 'smooth'
+  })
+}
+
+for (const link of links) {
+  link.addEventListener('click', clickHandler)
+}
+
+export { navChange, logoChange, contactBtnChange, clickHandler }

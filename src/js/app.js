@@ -8,12 +8,13 @@ import '../../node_modules/waypoints/src/waypoint'
 import $ from 'jquery'
 // import 'aos'
 // import '../../node_modules/aos/dist/aos.js'
-import { navChange, logoChange, contactBtnChange } from './nav.js'
+import { navChange, logoChange, contactBtnChange, clickHandler } from './nav.js'
 
 window.$ = $
 navChange()
 logoChange()
 contactBtnChange()
+clickHandler()
 
 /* Your JS Code goes here */
 
@@ -133,22 +134,22 @@ $(function () {
 
   // smooth scroll to section:
 
-  $('a').on('click', function (event) {
-    $('.page__nav-list').removeClass('navOpen')
-    $('.menu-btn').removeClass('open')
+  // $('a').on('click', function (event) {
+  //   $('.page__nav-list').removeClass('navOpen')
+  //   $('.menu-btn').removeClass('open')
 
-    if (this.hash !== '') {
-      event.preventDefault()
+  //   if (this.hash !== '') {
+  //     event.preventDefault()
 
-      var hash = this.hash
+  //     var hash = this.hash
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - $('.page__nav').height()
-      }, 800, function () {
-        window.location.hash = hash
-      })
-    } // End if
-  })
+  //     $('html, body').animate({
+  //       scrollTop: $(hash).offset().top - $('.page__nav').height()
+  //     }, 800, function () {
+  //       window.location.hash = hash
+  //     })
+  //   } // End if
+  // })
 
-  console.log($('.page__nav').height())
+  // console.log($('.page__nav').height())
 })
