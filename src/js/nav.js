@@ -1,6 +1,8 @@
 
 const menuBtn = document.querySelector('.menu-btn')
+const pageNav = document.querySelector('.page__nav')
 const navList = document.querySelector('.page__nav-list')
+const pageLinks = document.querySelectorAll('.page__nav-list-item-link')
 const contactBtn = document.querySelector('#contact-btn')
 const logo = document.querySelector('#Group_3')
 console.log(logo)
@@ -47,7 +49,7 @@ const logoChange = () => {
 
 const contactBtnChange = () => {
   window.addEventListener('scroll', e => {
-    console.log('scrolling......')
+    // console.log('scrolling......')
     e.preventDefault();
     (document.body.scrollTop >= 200 ||
       document.documentElement.scrollTop >= 100)
@@ -58,29 +60,4 @@ const contactBtnChange = () => {
   })
 }
 
-// amoth scrool:
-
-const links = document.querySelectorAll('.page__nav-list-item-link')
-
-
-
-const clickHandler = e => {
-  console.log('klik')
-  document.querySelector('.page__nav-list').classList.remove('navOpen')
-  document.querySelector('.menu-btn').classList.remove('open')
-
-  e.preventDefault()
-  const href = this.getAttribute('href')
-  const offsetTop = document.querySelector(href).offsetTop - document.querySelector('.page__nav').clientHeight
-
-  scroll({
-    top: offsetTop,
-    behavior: 'smooth'
-  })
-}
-
-for (const link of links) {
-  link.addEventListener('click', clickHandler)
-}
-
-export { navChange, logoChange, contactBtnChange, clickHandler }
+export { navChange, logoChange, contactBtnChange }
