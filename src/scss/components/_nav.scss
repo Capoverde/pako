@@ -46,7 +46,7 @@
 
       &-link {
         position: relative;
-        @include fluidSize(14px, 14px);
+        font-size:14px;
         margin-left: 24px;
         font-weight: 600;
         overflow: hidden;
@@ -61,11 +61,20 @@
       }
     }
   }
+
+  #social-button{
+    i{
+
+          font-size: 22px;
+    }
+  }
+
   .btn {
     background: transparent;
     color: $hero-clr;
     padding: 8px 24px;
   }
+  
 }
 
 //###################################################
