@@ -28,16 +28,19 @@
         width: 66%;
         h4 {
           padding-top: 20px;
+          font-size: 25px;
         }
 
         p {
           @include fluidSize(10px, 14px);
           padding: 20px 0;
           text-align: center;
+          margin-bottom: 10px;
         }
 
         .transport__list-container {
           display: flex;
+          margin-bottom: 30px;
         }
 
         .transport__list {
@@ -60,8 +63,8 @@
               margin-bottom: 10px;
             }
             img {
-              width: 40px;
-              height: 25px;
+              width: 60px;
+              height: 40px;
             }
             span {
               padding: 0 10px;
@@ -72,7 +75,7 @@
 
         .magazine {
           max-width: 100%;
-          max-height: 40%;
+          max-height: 41%;
           border-radius: 16px;
           overflow: hidden;
           margin-top: 15px;
@@ -86,10 +89,15 @@
 
       &-right {
         width: 60%;
-        height: 105%;
+        height: auto;
+        background: $placeholder-bg;
+        @include border-radius(16px);
+        margin-top: 20px;
+        margin-left: 10px;
+        overflow: hidden;
 
         img {
-          max-width: 105%;
+          max-width: 101%;
         }
       }
     }
