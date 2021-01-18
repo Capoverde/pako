@@ -12,6 +12,8 @@
   }
 
   @include respond-below(md) {
+    background-position: -200px 0;
+    background-size: cover;
     padding: 100px 10%;
     height: 150vh;
   }
@@ -45,10 +47,6 @@
       letter-spacing: -0.88px;
       text-align: left;
 
-      @include respond-below(md) {
-        // padding: 0;
-      }
-
       h1 {
         font-size: 40px;
 
@@ -59,8 +57,9 @@
         }
 
         @include respond-below(md) {
-          padding: 20px 0;
-          font-weight: 700;
+          font-size: 38px;
+          margin-bottom: 20px;
+          font-weight: 900;
         }
       }
 
@@ -120,7 +119,7 @@
     // }
 
     @include respond-below(md) {
-      top: 6%;
+      top: 5.3% !important;
     }
 
     &:hover {
@@ -192,7 +191,7 @@
 
         @include respond-below(md) {
           margin-right: 10px;
-          margin-top: -730px;
+          margin-top: -810px;
         }
 
         &-item {
