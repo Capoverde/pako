@@ -6,6 +6,10 @@
     padding-top: 30px;
   }
 
+  @include respond-above(xl) {
+    padding-top: 100px;
+  }
+
   .container {
     h2 {
       text-align: left;
@@ -43,6 +47,10 @@
           order: 2;
           height: auto;
           margin-bottom: 30px;
+        }
+
+        @include respond-above(xl) {
+          margin-top: 60px;
         }
 
         p {
@@ -97,6 +105,10 @@
 
         img {
           max-width: 105%;
+
+          @include respond-above(xl) {
+            max-width: 95%;
+          }
 
           @include respond-below(md) {
             max-width: 100%;

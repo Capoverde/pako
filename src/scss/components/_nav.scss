@@ -67,10 +67,14 @@
   #contact-btn {
     @include respond-below(md) {
       padding: 11px 74px !important;
+      margin-top: 52px !important;
     }
   }
 
   #social-button {
+    @include respond-below(md) {
+      margin-top: 20px !important;
+    }
     i {
       font-size: 22px;
 
