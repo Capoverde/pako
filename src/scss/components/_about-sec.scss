@@ -8,7 +8,7 @@
   background-attachment: fixed;
 
   @include respond-below(md) {
-    padding-top: 330px;
+    padding-top: 0;
     background-image: none;
   }
 

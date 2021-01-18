@@ -65,7 +65,10 @@
           }
           &-link {
             color: $text-clr;
-            @include fluidSize(12px, 14px);
+            font-size: 14px;
+            @include respond-below(md) {
+              font-size: 16px;
+            }
           }
         }
         @include respond-below(md) {
@@ -86,6 +89,7 @@
               order: 2;
             }
             &:nth-child(3) {
+              padding-top: 40px;
               order: 1;
             }
             &:nth-child(4) {

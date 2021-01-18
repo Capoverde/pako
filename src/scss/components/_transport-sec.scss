@@ -41,6 +41,10 @@
         .transport__list-container {
           display: flex;
           margin-bottom: 30px;
+
+          @include respond-below(md) {
+            flex-flow: column wrap;
+          }
         }
 
         .transport__list {
@@ -69,6 +73,16 @@
             span {
               padding: 0 10px;
               font-size: 11px;
+
+              @include respond-below(md) {
+                font-size: 16px;
+              }
+            }
+          }
+
+          &-right {
+            @include respond-below(md) {
+              margin-top: 15px;
             }
           }
         }
@@ -95,6 +109,10 @@
         margin-top: 20px;
         margin-left: 10px;
         overflow: hidden;
+
+        @include respond-below(md) {
+          margin-left: 0;
+        }
 
         img {
           max-width: 115%;

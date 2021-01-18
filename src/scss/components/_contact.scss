@@ -2,10 +2,19 @@
   min-height: 85vh;
   padding-top: 80px;
 
+  @include respond-below(md) {
+    padding-top: 30px;
+  }
+
   .container {
     h2 {
       text-align: left;
       margin-left: 150px;
+
+      @include respond-below(md) {
+        margin-left: 80px;
+        font-size: 30px;
+      }
     }
 
     .contact-wrapper {
@@ -32,6 +41,8 @@
         @include respond-below(md) {
           justify-content: center;
           order: 2;
+          height: auto;
+          margin-bottom: 30px;
         }
 
         p {
@@ -89,7 +100,7 @@
 
           @include respond-below(md) {
             max-width: 100%;
-            padding-top: 30px;
+            padding-top: 0;
           }
         }
       }

@@ -11,6 +11,11 @@
     height: 110vh;
   }
 
+  @include respond-below(md) {
+    padding: 100px 10%;
+    height: 150vh;
+  }
+
   .container {
     margin-left: 20%;
     margin-right: 10%;
@@ -41,7 +46,7 @@
       text-align: left;
 
       @include respond-below(md) {
-        padding: 0 30px;
+        // padding: 0;
       }
 
       h1 {
@@ -55,6 +60,7 @@
 
         @include respond-below(md) {
           padding: 20px 0;
+          font-weight: 700;
         }
       }
 
@@ -65,6 +71,9 @@
 
         @include respond-below(md) {
           padding: 0;
+          text-align: left;
+          font-size: 16px;
+          width: 301px;
         }
 
         @include respond-above(xl) {
@@ -102,12 +111,16 @@
       top: 570px;
     }
 
-    @media (max-width: 1367px) {
+    @include respond-between(md, l) {
       top: 400px;
     }
 
+    // @media (min-width: 992px and max-width: 1367px) {
+    //   top: 400px;
+    // }
+
     @include respond-below(md) {
-      top: 9%;
+      top: 8%;
     }
 
     &:hover {
@@ -148,9 +161,9 @@
       }
 
       @include respond-below(md) {
-        width: 330px;
+        width: 300px;
         height: 200px;
-        margin: 375px 25px;
+        margin: 375px 0px;
       }
 
       img {
@@ -163,6 +176,7 @@
       margin-left: 30px;
       @include respond-below(md) {
         width: 2700px;
+        margin-left: 0;
       }
       &-list {
         width: 100%;
@@ -178,8 +192,7 @@
 
         @include respond-below(md) {
           margin-right: 10px;
-          position: absolute;
-          top: -45%;
+          margin-top: -730px;
         }
 
         &-item {
@@ -230,6 +243,8 @@
 
             @include respond-below(md) {
               padding: 0px 50px 0 0;
+              font-size: 13px;
+              width: 290px;
             }
           }
         }
