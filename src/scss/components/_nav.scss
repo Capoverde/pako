@@ -8,6 +8,7 @@
 
   @include respond-below(md) {
     padding: 20px 5%;
+    overflow: scroll;
   }
 
   .logo {
@@ -31,7 +32,7 @@
 
     &-item {
       @include respond-below(md) {
-        margin-top: 80px;
+        margin-top: 70px;
         text-align: center;
       }
 
@@ -46,7 +47,7 @@
 
       &-link {
         position: relative;
-        font-size:14px;
+        font-size: 14px;
         margin-left: 24px;
         font-weight: 600;
         overflow: hidden;
@@ -62,10 +63,9 @@
     }
   }
 
-  #social-button{
-    i{
-
-          font-size: 22px;
+  #social-button {
+    i {
+      font-size: 22px;
     }
   }
 
@@ -74,7 +74,6 @@
     color: $hero-clr;
     padding: 8px 24px;
   }
-  
 }
 
 //###################################################
