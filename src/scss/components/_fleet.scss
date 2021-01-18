@@ -1,6 +1,10 @@
 .fleet-sec {
   h2 {
     padding-bottom: 40px;
+
+    @include respond-below(md) {
+      font-size: 30px;
+    }
   }
 
   p {
@@ -8,6 +12,10 @@
     text-align: center;
     font-size: 18px;
     font-weight: 500;
+
+    @include respond-below(md) {
+      font-weight: 400;
+    }
   }
 
   .fleet-slider {

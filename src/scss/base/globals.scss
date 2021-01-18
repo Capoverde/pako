@@ -116,27 +116,10 @@ ul {
   }
 }
 
-#totop {
-  position: fixed;
-  bottom: 2%;
-  right: -50%;
-  width: 40px;
-  height: 40px;
-  background: $hero-clr;
-  color: $white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  @include border-radius(10px);
-  -webkit-box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.69);
-  box-shadow: 0px 0px 23px -4px rgba(0, 0, 0, 0.69);
-  cursor: pointer;
-  @include transition(all, 0.4s);
-}
-
-.showTop {
-  right: 5%;
+p.text {
+  @include respond-below(md) {
+    font-weight: 400 !important;
+  }
 }
 
 //##########################################
