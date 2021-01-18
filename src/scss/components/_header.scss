@@ -44,9 +44,9 @@
         font-size: 40px;
 
         @include respond-above(xl) {
-          width: 500px;
-
-          font-isze: 60px;
+          width: 600px;
+          font-size: 70px;
+          font-weight: 900;
         }
 
         @include respond-below(md) {
@@ -64,8 +64,9 @@
         }
 
         @include respond-above(xl) {
-          font-size: 18px;
+          font-size: 19px;
           margin-top: 40px;
+          width: 500px;
         }
       }
     }
@@ -96,7 +97,7 @@
 
     @include respond-above(xl) {
       left: 26.5%;
-      top: 530px;
+      top: 570px;
     }
 
     @media (max-width: 1367px) {
@@ -139,9 +140,9 @@
       overflow: hidden;
 
       @include respond-above(xl) {
-        margin-top: 280px;
-        width: 690px;
-        height: 300px;
+        margin-top: 260px;
+        width: 870px;
+        height: 270px;
       }
 
       @include respond-below(md) {
@@ -170,7 +171,7 @@
         margin-top: 20px;
 
         @include respond-above(xl) {
-          margin-top: 100px;
+          margin-top: 90px;
         }
 
         @include respond-below(md) {
@@ -188,7 +189,7 @@
 
           @include respond-above(xl) {
             margin-top: 30px;
-            padding-left: 20px;
+            padding-left: 25px;
             padding-right: 190px;
           }
 
@@ -218,9 +219,11 @@
             font-weight: 500;
 
             @include respond-above(xl) {
-              margin-left: 25px;
+              padding-right: 190px;
               padding: 8px 36px 0 0;
+              margin-left: 25px;
               font-weight: 500;
+              font-size: 18px;
             }
 
             @include respond-below(md) {
