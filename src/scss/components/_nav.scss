@@ -27,11 +27,12 @@
       left: 0;
       display: none;
       flex-flow: column wrap;
+      padding-top: 70px;
     }
 
     &-item {
       @include respond-below(md) {
-        margin-top: 70px;
+        margin-top: 30px;
         text-align: center;
       }
 
@@ -57,14 +58,25 @@
 
         @include respond-below(md) {
           margin-left: 0;
+          font-size: 18px;
         }
       }
+    }
+  }
+
+  #contact-btn {
+    @include respond-below(md) {
+      padding: 11px 74px !important;
     }
   }
 
   #social-button {
     i {
       font-size: 22px;
+
+      @include respond-below(md) {
+        font-size: 35px;
+      }
     }
   }
 
