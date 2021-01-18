@@ -6,6 +6,8 @@
   p {
     padding-bottom: 40px;
     text-align: center;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .fleet-slider {
@@ -15,10 +17,12 @@
   }
 
   .swiper-slide {
-    background-color: silver;
     @include border-radius(10px);
+    overflow: hidden;
+
     img {
       height: 300px;
+      width: fit-content;
     }
   }
 
@@ -32,6 +36,8 @@
 
   p.text {
     padding: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .opinion-slide {
@@ -43,29 +49,31 @@
     .opinion-content {
       p {
         padding: 10px;
-        @include fluidSize(8px, 12px);
         position: relative;
+        z-index: 9999;
+        font-size: 12px;
 
-        &::before,
-        &::after {
-          position: absolute;
-          transform: translate(-50%, -50%);
-          color: #dddddd;
-          @include fluidSize(100px, 200px);
-          opacity: 0.5;
-        }
+        // &::before,
+        // &::after {
+        //   position: absolute;
+        //   transform: translate(-50%, -50%);
+        //   color: #dddddd;
+        //   @include fluidSize(100px, 200px);
+        //   opacity: 0.5;
+        //   z-index: 3;
+        // }
 
-        &::before {
-          top: -90%;
-          content: open-quote;
-          left: 8%;
-        }
+        // &::before {
+        //   top: -90%;
+        //   content: open-quote;
+        //   left: 8%;
+        // }
 
-        &::after {
-          top: 157%;
-          content: close-quote;
-          right: -9%;
-        }
+        // &::after {
+        //   top: 157%;
+        //   content: close-quote;
+        //   right: -9%;
+        // }
       }
 
       span {

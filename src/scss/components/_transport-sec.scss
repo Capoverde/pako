@@ -32,7 +32,7 @@
         }
 
         p {
-          @include fluidSize(10px, 14px);
+          font-size: 18px;
           padding: 20px 0;
           text-align: center;
           margin-bottom: 10px;
@@ -68,21 +68,21 @@
             }
             span {
               padding: 0 10px;
-              @include fluidSize(14px, 10px);
+              font-size: 11px;
             }
           }
         }
 
         .magazine {
           max-width: 100%;
-          max-height: 41%;
+          max-height: 44%;
           border-radius: 16px;
           overflow: hidden;
           margin-top: 15px;
           background: $placeholder-bg;
 
           img {
-            width: 100%;
+            max-width: 100%;
           }
         }
       }
@@ -97,7 +97,7 @@
         overflow: hidden;
 
         img {
-          max-width: 101%;
+          max-width: 115%;
         }
       }
     }
@@ -147,7 +147,7 @@
         padding: 20px;
         display: inline-block;
         text-align: center;
-        @include fluidSize(8px, 10px);
+        font-size: 14px;
       }
     }
   }
@@ -156,5 +156,10 @@
 .uslugi {
   h2 {
     padding-top: 90px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
   }
 }
