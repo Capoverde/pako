@@ -31,6 +31,10 @@
       flex-flow: column wrap;
     }
 
+    @include respond-above(xl) {
+      justify-content: space-evenly;
+    }
+
     .counter__box {
       display: flex;
       flex-flow: column wrap;

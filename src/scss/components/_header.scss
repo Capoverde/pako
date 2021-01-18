@@ -69,7 +69,6 @@
 
         @include respond-above(xl) {
           font-size: 19px;
-          margin-top: 40px;
         }
       }
     }
@@ -208,7 +207,7 @@
             height: 40px;
 
             @include respond-above(xl) {
-              width: 80px;
+              width: 60px;
             }
 
             @include respond-below(md) {
