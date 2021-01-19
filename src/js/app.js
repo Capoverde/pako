@@ -17,6 +17,11 @@ contactBtnChange()
 
 /* Your JS Code goes here */
 
+// aos:
+
+AOS.init()
+
+
 // ######### vanilla ########## //
 
 // ---- swiper slider:
